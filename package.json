@@ -1,0 +1,31 @@
+{
+  "name": "@baristaio/rabbit-client",
+  "version": "0.0.5",
+  "description": "The utils and wrapper for client for RabbitMQ 0.91 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baristaio/rabbit-client.git"
+  },
+  "author": "vadim-ri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baristaio/rabbit-client/issues"
+  },
+  "homepage": "https://github.com/baristaio/rabbit-client#readme",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  },
+  "devDependencies": {
+    "events": "^3.3.0",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.0-beta1"
+  }
+}
