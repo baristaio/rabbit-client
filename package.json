@@ -1,6 +1,6 @@
 {
   "name": "@baristaio/rabbit-client",
-  "version": "0.0.5",
+  "version": "0.0.2-alfa",
   "description": "The utils and wrapper for client for RabbitMQ 0.91 ",
   "main": "index.js",
   "scripts": {
