@@ -12,14 +12,24 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 22.x]
+        node-version: [16.x, 18.x, 22.x]
+
+    services:
+      docker:
+        image: docker:19.03.12
+        options: --privileged
+        ports:
+          - 2375:2375
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+          - /home/runner/work:/home/runner/work
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
