@@ -30,7 +30,6 @@ jobs:
 
 
       - name: Install dependencies
-        run: echo "https://registry.npmjs.org/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > ~/.npmrc
         run: npm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
